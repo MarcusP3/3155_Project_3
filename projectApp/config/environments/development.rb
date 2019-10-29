@@ -1,7 +1,7 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
   # Whitelist one hostname
-  config.hosts << "70d1f6ab42014f349a7d1c0ce8bf677d.vfs.cloud9.us-east-2.amazonaws.com"
+  config.hosts << "4336740b245047e195e5c9c04b051756.vfs.cloud9.us-east-2.amazonaws.com"
   # Whitelist a test domain
   config.hosts << /application\.local\Z/
   # In the development environment your application's code is reloaded on
