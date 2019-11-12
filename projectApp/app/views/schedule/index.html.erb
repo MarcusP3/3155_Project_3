@@ -1,2 +1,20 @@
 <h1>schedule</h1>
+<%= link_to "Create homework", new_homework_path %>
+<table>
+  <tr>
+    <th>HW</th>
+    <th>Due Date</th>
+    <th>Time required</th>
+    <th>Note</th>
+  </tr>
  
+  <% @homework.each do |homework| %>
+    <tr>
+      <td><%= homework.hw_name %></td>
+      <td><%= homework.due_date %></td>
+      <td><%= homework.time_required %></td>
+      <td><%= homework.note %></td>
+      <td><%= link_to 'Show', homework_path(homework) %></td>
+    </tr>
+  <% end %>
+</table>
