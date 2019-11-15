@@ -4,13 +4,17 @@ class HomeworksController < ApplicationController
     end
     
     def new
+        @homework = Homework.new
     end
     
     def create
         @homework = Homework.new(homework_params)
         
-        @homework.save
-        redirect_to @homework
+        if @homework.save
+            redirect_to @homework
+        else
+            render 'new'
+        end
     end
 end
 
