@@ -1,20 +1,21 @@
 <h1>Schedule</h1>
-<%= link_to "Create homework", new_homework_path %>
-<table>
-  <tr>
-    <th>HW</th>
-    <th>Due Date</th>
-    <th>Time required</th>
-    <th>Note</th>
-  </tr>
- 
-  <% @homework.each do |homework| %>
-    <tr>
-      <td><%= homework.hw_name %></td>
-      <td><%= homework.due_date %></td>
-      <td><%= homework.time_required %></td>
-      <td><%= homework.note %></td>
-      <td><%= link_to 'Show', homework_path(homework) %></td>
-    </tr>
+
+<div id = "schedule">
+  <h2 id="month">
+    <%= link_to "<", date: @date.prev_month %>
+    <%= @date.strftime("%B %Y") %>
+    <%= link_to ">", date: @date.next_month %>  
+  </h2>
+  <%= calendar @date do |date| %>
+    <%= date.day %>
+    <% if @homework_by_date[date] %>
+      <ul>
+        <% @homework_by_date[date].each do |homework| %>
+          <li><%= link_to homework.hw_name, homework %></li>
+        <% end %>
+      </ul>
+    <% end %>
   <% end %>
-</table>
+</div>
+
+<%= link_to "Create homework", new_homework_path %>
