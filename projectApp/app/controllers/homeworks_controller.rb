@@ -16,6 +16,27 @@ class HomeworksController < ApplicationController
             render 'new'
         end
     end
+    
+    def edit
+        @homework = Homework.find(params[:id])
+    end
+    
+    def update
+        @homework = Homework.find(params[:id])
+        
+        if @homework.update(homework_params)
+            redirect_to @homework
+        else
+            render 'edit'
+        end
+    end
+    
+    def destroy
+        @homework = Homework.find(params[:id])
+        @homework.destroy
+        
+        redirect_to controller: 'schedule'
+    end
 end
 
 private
