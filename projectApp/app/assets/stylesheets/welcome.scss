@@ -36,7 +36,13 @@
     margin-bottom: 0;
     font-size: 12px;
     letter-spacing: 5px;
+    text-decoration: none;
+    color: black;
   }
   .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+
+  .navbar:hover {
     color: #1abc9c !important;
   }
