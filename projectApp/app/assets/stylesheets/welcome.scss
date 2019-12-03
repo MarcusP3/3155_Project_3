@@ -9,7 +9,7 @@
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-    background-color: #009933; /* Green */
+    background-color: #292c2f; /* Green */
     color: #ffffff;
   }
   .bg-2 { 
@@ -28,17 +28,24 @@
     padding-top: 70px;
     padding-bottom: 70px;
   }
-  .navbar {
+  
+  .navbar{
     padding-top: 15px;
     padding-bottom: 15px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 5px;
     text-decoration: none;
     color: black;
   }
+  
+  .navbar a:hover {
+    color: #1abc9c !important;
+    text-decoration: none;
+  }
+  
   .navbar-nav  li a:hover {
     color: #1abc9c !important;
   }
@@ -46,3 +53,25 @@
   .navbar:hover {
     color: #1abc9c !important;
   }
+  
+ .footer-nav{
+   display: block;
+   margin: 0;
+   padding: 10px;
+   width: 100%;
+   letter-spacing: 5px;
+   text-decoration: none;
+   list-style-type: none;
+ }
+ 
+ .footer-nav li{
+   letter-spacing: 5px;
+   text-decoration: none;
+   list-style-type: none;
+   color: #f5f6f7;
+ }
+ 
+ .footer-nav li a:hover {
+   color: #1abc9c !important;
+   text-decoration: none;
+ }
