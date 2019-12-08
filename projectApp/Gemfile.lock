@@ -243,6 +243,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
+  capybara
   cucumber
   cucumber-rails
   database_cleaner
@@ -250,7 +251,6 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)
   rails (~> 6.0.0)
-  rspec-expectations
   rspec-rails
   sass-rails (~> 5)
   simple_calendar (~> 2.0)
