@@ -42,8 +42,16 @@
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">What we are about.</h3><br>
+  <h3 class="margin">Making your life easier as a student.</h3>
+  <%= image_tag "/unc.jpg", class: "img-responsive margin", class:"college" %></br>
+  <h3 class="margin">Is what we are about.</h3><br>
   <div class="row">
+    <div class="col-sm-4"> 
+      <p>Calendar</p>
+      <%= link_to controller: 'schedule' do %>
+         <%= image_tag "/calendar.png", class: "img-responsive margin", class:"schedule" %>
+      <% end %>
+    </div>
     <div class="col-sm-4">
       <p>Navigation</p>
       <ul class="footer-nav">
@@ -53,15 +61,9 @@
       </ul>
     </div>
     <div class="col-sm-4"> 
-      <p>Calendar</p>
-      <%= link_to controller: 'schedule' do %>
-         <%= image_tag "/calendar.png", class: "img-responsive margin" %>
-      <% end %>
-    </div>
-    <div class="col-sm-4"> 
       <p>Create Homework</p>
       <%= link_to new_homework_path do %>
-         <%= image_tag "/calendar.png", class: "img-responsive margin" %>
+         <%= image_tag "/google-form.jpg", class: "img-responsive margin", class:"homework" %>
       <% end %>
     </div>
   </div>
