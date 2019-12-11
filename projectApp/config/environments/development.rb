@@ -5,6 +5,7 @@ Rails.application.configure do
   config.hosts << "dff06a231b2b4deeaf24ce86a7b98e94.vfs.cloud9.us-east-2.amazonaws.com" #FOR MYA
   config.hosts << "0bf7c47fed55424bb0792a41a6f216b8.vfs.cloud9.us-east-2.amazonaws.com" #Marcus
   config.hosts << "4336740b245047e195e5c9c04b051756.vfs.cloud9.us-east-2.amazonaws.com" #Chase
+  config.hosts << "02e18bf9479943fc880f09caad57c74d.vfs.cloud9.us-east-2.amazonaws.com" #MarcusNumber2
   # Whitelist a test domain
   config.hosts << /application\.local\Z/
   # In the development environment your application's code is reloaded on
